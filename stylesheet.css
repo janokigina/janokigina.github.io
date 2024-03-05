@@ -12,10 +12,6 @@ body {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-}
-
 main {
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +19,7 @@ main {
     padding: 20px;
 }
 
-section, aside {
+section {
     margin: 10px;
     padding: 20px;
     border-radius: 15px;
@@ -31,33 +27,14 @@ section, aside {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar {
-    flex: 1;
-    max-width: 300px; 
-    border: 2px solid #0056b3;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.lower-section {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.lower-section > section {
-    flex: 1;
-    margin: 10px;
-}
-
-aside div {
-    margin-bottom: 20px;
-}
-
 h2 {
     text-align: center;
-    color: #0056b3;
+}
+
+.summaries, #about-me {
+    border: 2px solid #0056b3;
+    max-width: 300px;
+    padding: 20px;
 }
 
 .profile-pic {
@@ -67,35 +44,20 @@ h2 {
     margin: 10px; 
 }
 
-.links {
-    display: inline-block;
-    margin-right: 20px;
-}
-
 #about-me {
     flex: 1;
-    border: 2px solid #0056b3;
-    max-width: 300px;
-    height: 500px;
-    margin-top: 30px;
-    padding: 30px;
 }
 
-#certificates div {
-    background-color: #e0f7fa;
-    margin-bottom: 15px; 
-    padding: 15px;
-    border-radius: 10px;
+.links {
+    display: inline-block;
 }
 
-#certificates .date, #certificates .credential, #certificates .keywords-label {
+a {
+    margin-right: 10px;
+}
+
+a:hover {
     color: #0056b3;
-}
-
-#certificates .title {
-    color: #0056b3;
-    font-weight: bold;
-    font-size: 1.1em;
 }
 
 #certificates {
@@ -104,21 +66,36 @@ h2 {
     padding: 20px;
 }
 
-#list-box div {
+#certificates div {
     background-color: #e0f7fa;
-    margin-bottom: 15px; 
     padding: 15px;
     border-radius: 10px;
 }
 
-#list-box .date, #list-box .place, #list-box .keywords-label {
-    color: #0056b3;
-}
-
-#list-box .title {
-    color: #0056b3;
+#certificates .title {
     font-weight: bold;
     font-size: 1.1em;
+}
+
+.summaries {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.summaries div {
+    margin-bottom: 20px;
+}
+
+.lower-section {
+    display: flex;
+    width: 100%;
+}
+
+.lower-section > section {
+    flex: 1;
+    margin: 10px;
 }
 
 #list-box {
@@ -128,16 +105,11 @@ h2 {
 }
 
 #list-box div {
-    background-color: #f0f0f0;
-    margin-bottom: 15px; 
+    background-color: #e0f7fa;
     padding: 15px;
-    border-radius: 10px;
 }
 
-a {
-    color: #0077b6;
-}
-
-a:hover {
-    color: #0056b3;
+#list-box .title {
+    font-weight: bold;
+    font-size: 1.1em;
 }
