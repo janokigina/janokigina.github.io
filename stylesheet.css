@@ -60,6 +60,10 @@ a:hover {
     color: #0056b3;
 }
 
+.keywords-label {
+    font-weight: 500;
+}
+
 #certificates {
     max-width: 450px;
     border: 2px solid #0056b3;
@@ -98,18 +102,18 @@ a:hover {
     margin: 10px;
 }
 
-#list-box {
+.list-box {
     max-width: calc(50% - 20px);
     border: 2px solid #0056b3;
     padding: 20px;
 }
 
-#list-box div {
+.list-box div {
     background-color: #e0f7fa;
     padding: 15px;
 }
 
-#list-box .title {
+.list-box .title {
     font-weight: bold;
     font-size: 1.1em;
 }
