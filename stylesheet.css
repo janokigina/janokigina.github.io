@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #e0f7fa;
-    color: #003c8f;
+    color: #0056b3;
     margin: 0;
     padding: 0;
 }
@@ -34,6 +34,7 @@ section, aside {
 .sidebar {
     flex: 1;
     max-width: 300px; 
+    border: 2px solid #0056b3;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -56,16 +57,16 @@ aside div {
 
 h2 {
     text-align: center;
-    color: #0277bd;
+    color: #0056b3;
 }
 
 h3 {
     text-align: left;
-    color: #0277bd;
+    color: #0056b3;
 }
 
 .profile-pic {
-    width: 100px; 
+    width: 200px; 
     height: auto;
     display: block;
     margin: 0 auto 10px; 
@@ -78,9 +79,33 @@ h3 {
 
 #about-me {
     flex: 1;
+    border: 2px solid #0056b3;
     max-width: 300px;
     margin-top: 30px;
     padding: 30px;
+}
+
+#certificates div {
+    background-color: #f0f0f0;
+    margin-bottom: 15px; 
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#certificates .date, #certificates .credential, #certificates .keywords-label {
+    color: #0056b3;
+}
+
+#certificates .title {
+    color: #0056b3;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#certificates {
+    max-width: 300px;
+    border: 2px solid #0056b3;
+    padding: 20px;
 }
 
 #work-experience div {
@@ -95,7 +120,7 @@ h3 {
 }
 
 #work-experience .title {
-    color: #d32f2f;
+    color: #0056b3;
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -118,7 +143,7 @@ h3 {
 }
 
 #education-background .title {
-    color: #d32f2f;
+    color: #0056b3;
     font-weight: bold;
     font-size: 1.1em;
 }
